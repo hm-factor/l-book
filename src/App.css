@@ -30,6 +30,7 @@ html, body, #root, .App {
 
 .navbar {
 	height: 50vh;
+	max-width: 38vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -52,7 +53,53 @@ html, body, #root, .App {
 .navbar-item:hover {
 	transform: scale(1.03);
 	border: 1px solid var(--almost-white);
+}
 
+.popup-container {
+	height: 50vh;
+	width: 20vw;
+	border: 1px solid var(--almost-white);
+	border-radius: 3px;
+}
+
+.popup-content {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.links {
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.links a {
+	text-decoration: none;
+	color: var(--almost-white);
+	font-size: 1.5rem;
+}
+.links a:hover {
+	text-decoration: underline;
+}
+
+.close-btn {
+	width: 4rem;
+	padding: .5rem;
+	border: none;
+	background-color: var(--light-pink);
+	color: var(--dark-blue);
+	text-align: center;
+	border-radius: 3px;
+	cursor: pointer;
+	user-select: none;
+}
+.close-btn:hover {
+	transform: scale(1.05);
 }
 
 .cover-container {
