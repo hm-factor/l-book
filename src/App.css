@@ -1,7 +1,10 @@
 :root {
 	--almost-white: rgb(254,253,254);
 	--light-pink: rgb(205,186,202);
-	--text-blue: rgb(50,74,106);
+	--dark-blue: rgb(50,74,106);
+	--light-blue: rgb(101 122 142);
+	--button-color: rgb(185 43 169);
+	--button-text: rgb(217 211 190);
 }
 
 html, body, #root, .App {
@@ -17,7 +20,7 @@ html, body, #root, .App {
 	height: 100%;
 	width: 100%;
 
-	background: var(--light-pink);
+	background: var(--dark-blue);
 
 	display: flex;
 	flex-direction: row;
@@ -38,8 +41,8 @@ html, body, #root, .App {
 	z-index: 1;
 	margin: 1rem 0;
 	padding: 1rem 1rem;
-	background-color: var(--text-blue);
-	color: var(--almost-white);
+	background-color: var(--light-pink);
+	color: var(--dark-blue);
 	font-size: 1.2rem;
 	text-align: center;
 	border-radius: 3px;
@@ -48,6 +51,8 @@ html, body, #root, .App {
 }
 .navbar-item:hover {
 	transform: scale(1.03);
+	border: 1px solid var(--almost-white);
+	/* font-weight: 500; */
 }
 
 
