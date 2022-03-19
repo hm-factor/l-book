@@ -16,9 +16,9 @@ export default function Popup(props) {
             {popup === "purchase" && (
                 <div className="popup-content">
                     <div className="links">
-                        <a target="_blank" rel="noopener" href="google.com">google</a>
-                        <a target="_blank" rel="noopener" href="amazon.com">amazon</a>
-                        <a target="_blank" rel="noopener" href="abebooks.com">abe</a>
+                        <a target="_blank" rel="noopener" href="google.com">link 1</a>
+                        <a target="_blank" rel="noopener" href="amazon.com">link 2</a>
+                        <a target="_blank" rel="noopener" href="abebooks.com">link 3</a>
                     </div>
                     {closeBtn}
                 </div>

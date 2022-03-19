@@ -16,9 +16,12 @@ function App() {
 	return (
 		<div className="App">
 			<div className="content">
-				<div className="navbar">
-					<div className={`navbar-item ${popup ? 'off' : ''}`} onClick={()=>openPopup('purchase')}>Purchase</div>
-					<div className={`navbar-item ${popup ? 'off' : ''}`} onClick={()=>openPopup('contact')}>Contact</div>
+				<div className="navbar-container">
+					<div className={`navbar-menu ${popup ? 'off' : ''}`}>
+						<div className="menu-tag">menu</div>
+						<div className={`navbar-item ${popup ? 'off' : ''}`} onClick={()=>openPopup('purchase')}>Purchase</div>
+						<div className={`navbar-item ${popup ? 'off' : ''}`} onClick={()=>openPopup('contact')}>Contact</div>
+					</div>
 					<Popup popup={popup} setPopup={setPopup}/>
 				</div>
 				<div className="cover-container">
