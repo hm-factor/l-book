@@ -3,6 +3,9 @@ import cover from "./book_cover.jpeg";
 import { useState } from 'react';
 import Popup from './Popup.jsx';
 
+import { init } from "@emailjs/browser";
+init("FN0kgaiyoK4JrPv1h");
+
 function App() {
 	let [popup, setPopup] = useState(false)
 

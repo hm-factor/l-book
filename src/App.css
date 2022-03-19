@@ -41,7 +41,7 @@ html, body, #root, .App {
 	width: 10rem;
 	z-index: 1;
 	margin: 1rem 0;
-	padding: 1rem 1rem;
+	padding: 1rem;
 	background-color: var(--light-pink);
 	color: var(--dark-blue);
 	font-size: 1.2rem;
