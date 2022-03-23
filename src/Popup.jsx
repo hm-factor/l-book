@@ -16,18 +16,28 @@ export default function Popup(props) {
             {popup === "purchase" && (
                 <div className="popup-content">
                     <div className="links">
-                        <a target="_blank" rel="noopener" href="google.com">link 1</a>
-                        <a target="_blank" rel="noopener" href="amazon.com">link 2</a>
-                        <a target="_blank" rel="noopener" href="abebooks.com">link 3</a>
+                        <a target="_blank" rel="noopener" href="google.com">this is a link</a>
+                        <a target="_blank" rel="noopener" href="amazon.com">also a link</a>
+                        <a target="_blank" rel="noopener" href="abebooks.com">not a link</a>
                     </div>
                     {closeBtn}
                 </div>
             )}
             {popup === "contact" && (
-                <div className="popup-content">
-                    <div className="">
-
-                    </div>
+                <div className="popup-content contact-content">
+                    <form className="contact-form" action="submit">
+                        <label className="contact-section">
+                            name/email
+                            <input type="text" />
+                        </label>
+                        <label className="contact-section">
+                            message
+                            <input className="contact-body" type="text" />
+                        </label>
+                        <button type="submit" className="send-btn">
+                            Send!
+                        </button>
+                    </form>
                     {closeBtn}
                 </div>
             )}

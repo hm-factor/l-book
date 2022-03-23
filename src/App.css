@@ -2,6 +2,7 @@
 	--almost-white: rgb(254,253,254);
 	--light-pink: rgb(205,186,202);
 	--dark-blue: rgb(50,74,106);
+	--true-blue: rgb(15, 59, 116);
 	--light-blue: rgb(101 122 142);
 	--button-color: rgb(185 43 169);
 	--button-text: rgb(217 211 190);
@@ -20,7 +21,9 @@ html, body, #root, .App {
 	height: 100%;
 	width: 100%;
 
-	background: var(--dark-blue);
+	background: linear-gradient( var(--dark-blue), var(--true-blue), var(--light-blue));
+	background-size: 200% 200%;
+	animation: gradient 15s ease infinite;
 
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -40,6 +43,7 @@ html, body, #root, .App {
 	align-items: center;
 
 	border: 1px solid rgb(34 50 70);
+	background: var(--dark-blue);
     padding: 2rem;
     border-radius: 3px;
 }
@@ -80,9 +84,13 @@ html, body, #root, .App {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background: var(--dark-blue);
+}
+.contact-content {
+
 }
 
-.links {
+.links, .contact-form {
 	height: 80%;
 	display: flex;
 	flex-direction: column;
@@ -104,7 +112,21 @@ html, body, #root, .App {
 	transition: all .1s ease-in-out;
 }
 
-.close-btn {
+.contact-form {
+	width: 95%;
+}
+.contact-section {
+	display: flex;
+	flex-direction: column;
+	width: inherit;
+	color: var(--almost-white);
+}
+.contact-body {
+	height: 6rem;
+	display: flex;
+}
+
+.close-btn, .send-btn {
 	width: 4rem;
 	padding: .5rem;
 	border: none;
@@ -115,7 +137,10 @@ html, body, #root, .App {
 	cursor: pointer;
 	user-select: none;
 }
-.close-btn:hover {
+.send-btn {
+
+}
+.close-btn:hover, .send-btn {
 	transform: scale(1.05);
 }
 
@@ -137,4 +162,16 @@ html, body, #root, .App {
 
 .off {
 	display: none;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
