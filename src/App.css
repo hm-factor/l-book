@@ -86,9 +86,6 @@ html, body, #root, .App {
 	align-items: center;
 	background: var(--dark-blue);
 }
-.contact-content {
-
-}
 
 .links, .contact-form {
 	height: 80%;
@@ -136,9 +133,6 @@ html, body, #root, .App {
 	border-radius: 3px;
 	cursor: pointer;
 	user-select: none;
-}
-.send-btn {
-
 }
 .close-btn:hover, .send-btn {
 	transform: scale(1.05);
