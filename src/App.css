@@ -1,6 +1,6 @@
 :root {
 	--almost-white: rgb(254,253,254);
-	--light-pink: rgb(205,186,202);
+	--cover-pink: rgb(190,169,185);
 	--dark-blue: rgb(50,74,106);
 	--true-blue: rgb(15, 59, 116);
 	--light-blue: rgb(101 122 142);
@@ -58,7 +58,7 @@ html, body, #root, .App {
 	z-index: 1;
 	margin: 1rem 0;
 	padding: 1rem;
-	background-color: var(--light-pink);
+	background-color: var(--cover-pink);
 	color: var(--dark-blue);
 	font-size: 1.2rem;
 	text-align: center;
@@ -130,7 +130,7 @@ html, body, #root, .App {
 	width: 4rem;
 	padding: .5rem;
 	border: none;
-	background-color: var(--light-pink);
+	background-color: var(--cover-pink);
 	color: var(--dark-blue);
 	text-align: center;
 	border-radius: 3px;
