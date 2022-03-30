@@ -1,4 +1,8 @@
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 export default function Popup(props) {
+	const form = useRef()
     let { popup, setPopup } = props;
 
     function closePopup() {
@@ -10,6 +14,26 @@ export default function Popup(props) {
             <button className="close-btn" onClick={closePopup}>close</button>
         </div>
     );
+
+		function sendEmail(e) {
+			e.preventDefault();
+
+			emailjs
+        .sendForm(
+          "service_4dz4pbo",
+          "template_jjk0hgk",
+          form.current,
+          "FN0kgaiyoK4JrPv1h"
+        )
+        .then(
+          (res) => {
+            console.log(res.txt);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+		}
 
     return (
       <div className={`popup-container ${popup ? "" : "off"}`}>
@@ -43,14 +67,18 @@ export default function Popup(props) {
         )}
         {popup === "contact" && (
           <div className="popup-content contact-content">
-            <form className="contact-form" action="submit">
+            <form ref={form} className="contact-form" onSubmit={sendEmail} >
               <label className="contact-section">
-                name/email
-                <input type="text" />
+                name
+                <input type="text" name="name" />
+              </label>
+              <label className="contact-section">
+                email
+                <input type="text" name="email" />
               </label>
               <label className="contact-section">
                 message
-                <input className="contact-body" type="text" />
+                <input className="contact-body" type="text" name="body" />
               </label>
               <button type="submit" className="send-btn">
                 Send!
