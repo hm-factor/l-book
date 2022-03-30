@@ -19,6 +19,13 @@ export default function Popup(props) {
               <a
                 target="_blank"
                 rel="noreferrer"
+                href="https://bookshop.org/books/soon-i-ll-be-from-the-soil-someday-essays-on-plants-and-loss/9780578390802"
+              >
+                Bookshop
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
                 href="https://www.barnesandnoble.com/w/soon-ill-be-from-the-soil-someday-eleanor-amicucci/1141262741?ean=9780578390802"
               >
                 Barnes & Noble
