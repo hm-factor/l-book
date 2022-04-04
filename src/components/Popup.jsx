@@ -78,7 +78,7 @@ export default function Popup(props) {
               </label>
               <label className="contact-section">
                 message
-                <input className="contact-body" type="text" name="body" />
+                <textarea className="contact-body" name="body" />
               </label>
               <button type="submit" className="send-btn">
                 Send!

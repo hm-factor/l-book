@@ -123,6 +123,7 @@ html, body, #root, .App {
 .contact-body {
 	height: 6rem;
 	display: flex;
+	resize: none;
 }
 
 .close-btn, .send-btn {
