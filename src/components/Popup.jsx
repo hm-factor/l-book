@@ -74,7 +74,7 @@ export default function Popup(props) {
               </label>
               <label className="contact-section">
                 email
-                <input type="text" name="email" />
+                <input type="email" name="email" />
               </label>
               <label className="contact-section">
                 message

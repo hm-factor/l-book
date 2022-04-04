@@ -6,6 +6,7 @@
 	--light-blue: rgb(101 122 142);
 	--button-color: rgb(185 43 169);
 	--button-text: rgb(217 211 190);
+	--lighter-blue: rgb(77 147 215);
 }
 
 html, body, #root, .App {
@@ -162,7 +163,7 @@ html, body, #root, .App {
 .summary-container {
 	height: 100%;
 	width: 100%;
-	backdrop-filter: blur(2px);
+	backdrop-filter: blur(5px);
 
 	z-index: 5;
 	position: absolute;
@@ -180,13 +181,15 @@ html, body, #root, .App {
 	
 	background-color: rgb(0,0,0,0.7);
 	font-size: 1.2rem;
+
+	border-radius: 5px;
 }
 .summary-italic {
 	font-style: italic;
 	color: var(--almost-white);
 }
 .summary-body {
-	color: var(--light-blue);
+	color: var(--lighter-blue);
 }
 
 .off {
