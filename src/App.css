@@ -192,6 +192,33 @@ html, body, #root, .App {
 	color: var(--lighter-blue);
 }
 
+.cover-cred {
+	position: absolute;
+	bottom: 1rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: max-content;
+}
+.cover-cred div {
+	font-style: italic;
+}
+.cover-cred a {
+	margin: .7rem 0;
+	text-decoration: none;
+	color: var(--almost-white);
+	font-size: 1.2rem;
+
+	padding: .2rem;
+}
+.cover-cred:hover a {
+	border: 1px solid var(--cover-pink);
+	border-radius: 5px;
+}
+
 .off {
 	display: none;
 }

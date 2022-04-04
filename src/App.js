@@ -38,6 +38,10 @@ function App() {
 							Contact
 						</div>
 					</div>
+					<div className="cover-cred">
+						<div>Cover Design by</div>
+						<a target="_blank" rel="noreferrer" href="http://waynekehoe.com/">Wayne Kehoe</a>
+					</div>
 					<Popup popup={popup} setPopup={setPopup} />
 				</div>
 				<div className="cover-container">
